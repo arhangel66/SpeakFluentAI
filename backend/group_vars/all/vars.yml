@@ -1,0 +1,13 @@
+vars:
+  pip_install_packages:
+    - name: docker
+  datadog_api_key: "{{DATADOG_API_KEY}}"
+  datadog_site: "datadoghq.eu"
+  datadog_checks:
+    http_check:
+      init_config:
+      instances:
+        - name: Application health check status
+          method: GET
+          timeout: 5
+          url: "http://localhost:80"

@@ -50,7 +50,9 @@ module.exports = configure(function (ctx) {
     // Full list of options: https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js#Property%3A-build
     build: {
       vueRouterMode: 'hash', // available values: 'hash', 'history'
-
+      env: {
+        HOST: "http://206.189.48.53:8000",
+      },
       // transpile: false,
       // publicPath: '/',
 
@@ -154,8 +156,8 @@ module.exports = configure(function (ctx) {
 
 
       manifest: {
-        name: `Virtual-Teacher`,
-        short_name: `Virtual-Teacher`,
+        name: `Speak Fluent`,
+        short_name: `speak-fluent`,
         description: `A Quasar Project`,
         display: 'standalone',
         orientation: 'portrait',

@@ -2,7 +2,7 @@
   "name": "q-virtual-teacher",
   "version": "0.0.1",
   "description": "A Quasar Project",
-  "productName": "Virtual-Teacher",
+  "productName": "Speak Fluent",
   "author": "Mikhail Derbichev <arhangel662@gmail.com>",
   "private": true,
   "scripts": {

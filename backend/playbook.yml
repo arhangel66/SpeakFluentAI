@@ -1,0 +1,28 @@
+- name: Deploy project
+  hosts: all
+  roles:
+    - geerlingguy.pip
+
+  vars:
+    pip_install_packages:
+      - name: docker
+
+  tasks:
+    - name: make env
+      ansible.builtin.template:
+        src: templates/.env.example
+        dest: /.env
+        mode: '0644'
+
+    - name: start app
+      community.docker.docker_container:
+        name: app
+        image: "arhangel662/speakfluentai"
+        restart_policy: always
+        state: started
+        env_file: /.env
+        ports:
+          - "8000:8000"
+        pull: yes
+
+

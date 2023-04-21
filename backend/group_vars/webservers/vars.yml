@@ -1,0 +1,9 @@
+REDMINE_DB_POSTGRES: "db-postgresql-lon1-14566-do-user-9685800-0.b.db.ondigitalocean.com"
+REDMINE_DB_USERNAME: "doadmin"
+REDMINE_DB_DATABASE: "defaultdb"
+REDMINE_DB_PASSWORD: "{{VAULT_REDMINE_DB_PASSWORD}}"
+API_KEY_ENV: "{{API_KEY_ENV}}"
+REDMINE_DB_PORT: "25060"
+WEBSITE_URL: "https://scandi-studio-sochi.ru/"
+
+DATADOG_API_KEY: "{{VAULT_DATADOG_API_KEY}}"

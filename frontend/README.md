@@ -1,4 +1,3 @@
-# Virtual-Teacher (q-virtual-teacher)
 
 A Quasar Project
 
